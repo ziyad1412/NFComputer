@@ -1,0 +1,242 @@
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+  }
+  
+  .navbar {
+    background: white;
+    height: 85px;
+    display: flex;
+    padding: 0 10%;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px 0 rgba(1, 1, 1, 0.1);
+  }
+  
+  nav a {
+    font-size: 15 px;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .nav-menu {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .hero-container {
+    display: flex;
+    height: 470px;
+    padding: 0 10%;
+  }
+  
+  .hero-container > div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-container h1 {
+    font-size: 60px;
+    width: 360px;
+    margin: 20px 0;
+    font-weight: bolder;
+  }
+  
+  .subjudul {
+    font-size: 60px;
+    text-align: center;
+    font-weight: bolder;
+  }
+  
+  .hero-container p {
+    font-size: 30px;
+    color: #4a5568;
+  }
+  
+  .hero-container > img {
+    width: 50%;
+    height: 323px;
+    align-self: center;
+  }
+  
+  .description-container {
+    height: 280px;
+    margin: 40px 0;
+    padding: 0 10%;
+    display: flex;
+  }
+  
+  .description-container > div {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 4px 8px 0px rgba(1, 1, 1, 0.1);
+    border-top: 1px solid rgb(228, 228, 228);
+  }
+  
+  .description-container h2 {
+    color: #2d3748;
+    font-weight: bolder;
+  }
+  
+  .description-container p {
+    color: #4a5568;
+  }
+  
+  .description-container > div > div {
+    width: 500px;
+  }
+  
+  .description-container > img {
+    width: 40%;
+    object-fit: cover;
+  }
+  
+  .description-left-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .content-container {
+    min-height: 400px;
+    margin: 40px 0;
+    padding: 0 10%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  
+  .content-container .card {
+    height: 100%;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(1, 1, 1, 0.1);
+    transform: 0.3s;
+  }
+  
+  .card:hover {
+    box-shadow: 0 4px 8px 0 rgba(1, 1, 1, 0.2);
+    cursor: pointer;
+  }
+  
+  .card > img {
+    object-fit: fill;
+    height: 240px;
+    width: 100%;
+  }
+  
+  .card > .card-body {
+    padding: 20px;
+  }
+  
+  .card h3 {
+    font-size: 20px;
+    margin: 0 15px 0 0;
+  }
+  
+  .card p {
+    color: #4a5568;
+    font-size: 16px;
+  }
+  
+  .card > .card-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    height: 80px;
+  }
+  footer > div {
+    display: flex;
+    gap: 30px;
+  }
+  
+  /*utils */
+  
+  .font-weight-bold {
+    font-weight: bold;
+  }
+  
+  @media only screen and (max-width: 420px) {
+    .hero-container {
+      flex-wrap: wrap;
+      height: 100%;
+    }
+  
+    .hero-container > div {
+      width: 100%;
+      height: 250px;
+    }
+  
+    .hero-container > img {
+      width: 100%;
+      height: 100%;
+    }
+  
+    .hero-container h1 {
+      font-size: 36px;
+      text-align: center;
+      width: 100%;
+    }
+  
+    .hero-container p {
+      font-size: 22px;
+      text-align: center;
+    }
+  
+    .content-container {
+      grid-template-columns: 1fr;
+    }
+  
+    .description-container {
+      flex-wrap: wrap;
+      height: 100%;
+    }
+  
+    .description-container h2,
+    .description-container p {
+      text-align: center;
+    }
+  
+    .description-container > div {
+      width: 100%;
+      padding: 5%;
+    }
+  
+    .description-container > div > div {
+      width: 100%;
+    }
+  
+    .description-container > img {
+      width: 100%;
+      height: 200px;
+    }
+  
+    nav > .nav-menu {
+      display: none;
+    }
+  
+    .card img {
+      height: 200px;
+    }
+  
+    footer {
+      flex-direction: column-reverse;
+    }
+  }
+  
